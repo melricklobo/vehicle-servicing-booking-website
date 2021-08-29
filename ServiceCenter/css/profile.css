@@ -1,0 +1,223 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  background-color: #6c757d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  width: 70%;
+  margin: 0 auto;
+  color: #8f8f8f;
+  line-height: 2;
+}
+
+.big-heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-weight: 900;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.containers-fluid {
+  padding: 7% 15%;
+}
+
+/* ------------------------------------Navigation Bar ----------------------------------------------*/
+
+.navbar {
+  margin: 0 0 1rem;
+  background-color: white;
+  color: #000;
+  border-radius: 20px;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------TITLE SECTION -------------------------------------------------*/
+
+#title {
+  background-color: #000;
+  color: ghostwhite;
+  text-align: left;
+}
+
+#title .containers-fluid {
+  padding: 3% 15% 8%;
+}
+
+.containers-fluid {
+  height: 97vh;
+  background-color: #151618;
+}
+
+/*----------------------------------- Title Image ----------------------------------------------*/
+
+.title-image {
+  width: 90%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 10%;
+  text-decoration: blink;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 0.6s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
+}
+
+@-webkit-keyframes blinker {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 990px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    margin-top: 10%;
+  }
+}
+
+/*----------------------------------- User Table ----------------------------------------------*/
+
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  color: white;
+  border: 2px solid lightblue;
+  text-align: center;
+  padding: 2rem;
+}
+
+th {
+  height: 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(100, 211, 245);
+}
+
+td {
+  height: 5rem;
+  font-size: 1.2rem;
+  background-color: black;
+}
+
+.user-details th {
+  height: 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  background-color: rgb(100, 211, 245);
+}
+
+.user-details td {
+  height: 5rem;
+  font-size: 1.2rem;
+  background-color: #202225;
+}
+
+.user-details {
+  margin-top: 10%;
+}
+
+/*----------------------------------- Modal Calendar ----------------------------------------------*/
+
+.ui-datepicker-header {
+  padding-top: 10px;
+  color: White;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.ui-datepicker-header:hover {
+  cursor: pointer;
+}
+
+.ui-datepicker-prev {
+  padding: 10px;
+}
+
+.ui-datepicker-next {
+  padding: 10px;
+}
+
+.ui-datepicker-title {
+  padding: 10px;
+}
+
+/*----------------------------------- Modal Details ----------------------------------------------*/
+
+.modal-content {
+  height: 30rem;
+}
+
+.modal-header {
+  background-color: rgb(100, 211, 245);
+}
+
+.modal-title {
+  font: 20px;
+  font-weight: bold;
+}
+
+#det {
+  padding: 35px;
+}
+
+.modal-content .label,
+.modal-body .modal-label {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.modal-content .detail,
+.modal-body .modal-detail {
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(143, 143, 143);
+}

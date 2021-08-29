@@ -1,0 +1,142 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  background-color: #000;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+p {
+  width: 70%;
+  margin: 0 auto;
+  color: #8f8f8f;
+  line-height: 2;
+}
+
+.big-heading{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+.section-heading{
+  font-weight: 900;
+  width: 80%;
+  margin: 0 auto;
+  line-height: 2;
+}
+
+.containers-fluid {
+  padding: 7% 15%;
+}
+
+
+/* ------------------------------------Navigation Bar ----------------------------------------------*/
+
+.navbar {
+  margin: 0 0 1rem;
+  background-color:white;
+  color: #000;
+  border-radius: 20px;
+}
+
+.navbar-brand {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+
+/* -------------------------------------------------TITLE SECTION -------------------------------------------------*/
+
+#title {
+
+  color:ghostwhite;
+  text-align: left;
+}
+
+#title .containers-fluid {
+  padding: 3% 15% 8%;
+}
+
+
+/*----------------------------------- Title Image ----------------------------------------------*/
+
+.title-image {
+  width: 90%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 35%;
+  text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+
+@media (max-width:990px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    margin-top: 10%;
+  }
+}
+
+/*----------------------------------- User Table ----------------------------------------------*/
+
+table{
+  width: 100%;
+}
+
+table,th,td{
+  color: white;
+  border: 2px solid lightblue;
+  text-align: center;
+  padding: 1rem;
+}
+
+th{
+  height: 4.5rem;
+  font-size: 1.5rem;
+  font-weight:600;
+  background-color: darkblue;
+
+}
+
+td{
+  height: 5rem;
+  font-size: 1.2rem;
+}
+
+.user-details{
+  margin-top: 10%;
+}
+
+
+

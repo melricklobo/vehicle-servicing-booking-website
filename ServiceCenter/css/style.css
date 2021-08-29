@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #151618;
+}
+
+.img img {
+  width: 100%;
+  height: 400px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  margin-top: 4rem;
+  padding: 10px;
+}
+
+.form-section {
+  width: 100%;
+  height: 4.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.form-appt {
+  width: 70%;
+  padding: 15px;
+  border: 5px solid rgb(141, 139, 139);
+  border-radius: 6px;
+  background: rgb(255, 255, 255, 0.9);
+}
+
+.form-pos {
+  margin: 30rem 30rem;
+}
+
+.form-section input {
+  height: 100%;
+  width: 100%;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.form-section label {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  border-bottom: 1px solid black;
+  pointer-events: none;
+}
+
+.form-section label::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid red;
+  left: 0px;
+  bottom: -1px;
+  transform: translateX(-100%);
+}
+
+.content-name {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  transition: all 0.3s ease;
+}
+
+.form-section input:focus + .label-name .content-name,
+.form-section input:valid + .label-name .content-name {
+  transform: translateY(-150%);
+  font-size: 15px;
+  color: #5fa8d3;
+}
+
+.form-section input:focus + .label-name::after,
+.form-section input:valid + .label-name::after {
+  transform: translateX(0%);
+}
+
+input[type="date"]:required:invalid::-webkit-datetime-edit {
+  color: transparent;
+}
+input[type="date"]:focus::-webkit-datetime-edit {
+  color: black !important;
+}
+
+.form-section.errmsg {
+  position: absolute;
+  font-size: medium;
+  height: auto;
+  width: 100%;
+  bottom: 5px;
+  left: 0px;
+}
+
+.errmsg {
+  font-size: small;
+  font-style: italic;
+  color: rgb(255, 0, 0);
+}
+
+.chars_left {
+  position: absolute;
+  font-size: small;
+  font-style: italic;
+}
+
+#desc {
+  resize: none;
+}
+
+.container span a {
+  color: white;
+}
+
+/*Login Page*/
+
+.login_head {
+  font-size: 40px;
+  color: rgb(182, 182, 182);
+}
+
+.login_container {
+  height: 100vh;
+  background-color: #161616;
+}
+
+.login_fields {
+  width: 25%;
+  position: relative;
+  top: 25%;
+  transform: translateX(150%);
+}
+/*Register Page*/
+
+.register_container {
+  width: 75%;
+  height: 60%;
+  display: flex;
+  transform: translate(17%, 12%);
+  background-color: rgb(247, 247, 247);
+  border-radius: 10px;
+}
+
+.register_image {
+  width: 40rem;
+  height: 20rem;
+  transform: translate(15%, 60%);
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 30px 0 rgba(0, 0, 0, 0.19);
+  background-image: url("../img/reg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reg_head {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  font-size: 40px;
+  color: rgb(117, 116, 116);
+  text-transform: uppercase;
+  transform: translateX(2%);
+  padding-bottom: 30px;
+}
+
+.register_contents {
+  width: 30%;
+  height: 80vh;
+  transform: translate(60%, 10%);
+}
+
+.register_contents .form-group {
+  padding-bottom: 20px;
+}
+
+#wcmsg {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  font-family: cursive;
+}
+
+/*Profile Page*/
+
+.profile_container {
+  display: flex;
+}
+
+.profile_left {
+  width: 20%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+.profile_logo {
+  height: 30%;
+  padding: 20px;
+}
+
+.logoimg {
+  width: 70%;
+  height: 90%;
+  text-align: center;
+  transform: translateX(20%);
+  background-image: url("../img/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.profile_options {
+  width: 100%;
+  height: 10%;
+  margin-top: 2%;
+  text-align: center;
+  background-color: #c3c7c4;
+}
+
+.option {
+  width: 100%;
+  height: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-100%);
+}
+
+.profile_right {
+  width: 80%;
+  height: 100vh;
+  background-color: #161616;
+}
+
+#profile-text {
+  font-size: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 40%;
+  transform: translateX(25%);
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  height: 38rem;
+  width: 60%;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.box h5 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.box .form-group {
+  padding: 15px;
+}
+
+.box button {
+  padding: 8px;
+  height: 50px;
+}
